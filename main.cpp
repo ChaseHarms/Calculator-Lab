@@ -1,6 +1,7 @@
 #include "main.h"
 
 wxBEGIN_EVENT_TABLE(main, wxFrame)
+EVT_BUTTON(wxID_ANY, main::OnButtonClick)
 wxEND_EVENT_TABLE()
 
 main::main() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(30, 30), wxSize(217, 450)) {
@@ -29,4 +30,95 @@ main::main() : wxFrame(nullptr, wxID_ANY, "Calculator", wxPoint(30, 30), wxSize(
 }
 main::~main() {
 
+}
+
+void main::OnButtonClick(wxCommandEvent& evt) {
+	int id = evt.GetId();
+	switch (id)
+	{
+	case 0: {
+		txt->AppendText("0");
+		break;
+	}
+	case 1: {
+		txt->AppendText("1");
+		break;
+	}
+	case 2: {
+		txt->AppendText("2");
+		break;
+	}
+	case 3: {
+		txt->AppendText("3");
+		break;
+	}
+	case 4: {
+		txt->AppendText("4");
+		break;
+	case 5: {
+		txt->AppendText("5");
+		break;
+	}
+	case 6: {
+		txt->AppendText("6");
+		break;
+	}
+	case 7: {
+		txt->AppendText("7");
+		break;
+	}
+	case 8: {
+		txt->AppendText("8");
+		break;
+	}
+	case 9: {
+		txt->AppendText("9");
+		break;
+	}
+	case 10: {
+		txt->Clear();
+		break;
+	}
+	case 11: {
+		txt->AppendText("-");
+		break;
+	}
+	case 12: {
+		txt->AppendText("bin");
+		break;
+	}
+	case 13: {
+		txt->AppendText("hex");
+		break;
+	}
+	case 14: {
+		txt->AppendText("dec");
+		break;
+	}
+	case 15: {
+		txt->AppendText("=");
+		break;
+	}
+	case 16: {
+		txt->AppendText("+");
+		break;
+	}
+	case 17: {
+		txt->AppendText("-");
+		break;
+	}
+	case 18: {
+		txt->AppendText("*");
+		break;
+	}
+	case 19: {
+		txt->AppendText("/");
+		break;
+	}
+	case 20: {
+		txt->AppendText("mod");
+		break;
+	}
+	}
+	}
 }
