@@ -144,12 +144,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
+    <ClInclude Include="BaseCommand.h" />
     <ClInclude Include="ButtonFactory.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Processor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="BaseCommand.cpp" />
     <ClCompile Include="ButtonFactory.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
